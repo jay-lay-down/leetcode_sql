@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-SELECT name, area, population
-FROM World
-WHERE area >= 3000000 
- OR population >= 25000000
+SELECT w.name, w.population, w.area
+FROM World AS w
+WHERE w.population >=25000000 OR w.area >=3000000
+ORDER BY w.name
